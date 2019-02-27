@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Desafio contatos</title>
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/model.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1>Desafio contatos</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Contatos</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>Contatos</th>
+							<th>Número de Telefone</th>
+							<th>E-mail</th>
+							
+						</tr>
+					</thead>
+					<tbody id="tabela-contatos">
+						<tr class="contatos" >
+							<td class="info-contato">Paulo</td>
+							<td class="info-Numero de telefone">(15)998223425</td>
+							<td class="info-E-mail">paulo@gmail.com</td>
+							
+						</tr>
+
+						<tr class="contatos" >
+							<td class="info-contato">Guilherme</td>
+							<td class="info-Numero de telefone">(15)998653425</td>
+							<td class="info-E-mail">guilherme@gmail.com</td>
+							
+						</tr>
+
+						<tr class="contatos" >
+							<td class="info-contato">Gustavo</td>
+							<td class="info-Numero de telefone">(15)998453425</td>
+							<td class="info-E-mail">gustavo@gmail.com</td>
+							
+						</tr>
+
+						
+					</tbody>
+				</table>
+
+			</section>
+		</main>
+		<div id = "modal-tudo" class="conteiner-modal">
+			<div class = "modal">
+				<button class ="fechar">x</button>
+				<form id = "form-adiciona">
+					<div class="grupo">
+						<label for="Contato">Contato:</label>
+						<input id="Contato" name="Contato" type="text" placeholder="contato" class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="Telefone">Número de Telefone:</label>
+						<input id="Telefone" name="Telefone" type="text" placeholder="Número de Telefone " class="campo campo-medio">
+					</div>
+					<div class="grupo">
+						<label for="Email">E-mail:</label>
+						<input id="Email" name="E-mail" type="text" placeholder="E-mail" class="campo campo-medio">
+					</div>
+					
+					<button id="adicionar-Contato" class="botao-principal">Criar contato</button>
+				</form>
+			</div>
+		</div>
+		<div id = "adicionar" class="butao">
+			<button class = "butao-inicial">Adicionar</button>
+		</div>
+
+		<script src = "js/adicionar.js"></script>
+		<script src = "js/apagar.js"></script>
+		<script src = "js/modal.js"></script>
+	</body>
+</html>
